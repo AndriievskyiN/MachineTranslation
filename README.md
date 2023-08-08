@@ -23,22 +23,22 @@ To run the web application and test the trained model, follow these steps:
    
 2. Go into the downloaded directory
     ```bash
-    cd transformer-translation
+    cd MachineTranslation
     ```
     
 3. Download the required libraries
     ```bash
     pip install -r requirements.txt
     ```
-    
-4. Go into the dev directory
+
+4. Install npm
     ```bash
-    cd dev
+    nmp install
     ```
 
-5. Run the FastAPI server
+5. Run the webapp
     ```bash
-    uvicorn app:app --reload
+    npm start
     ```   
 
 6. Open the ***index.html*** file to access the web application
