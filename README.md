@@ -17,7 +17,7 @@ To run the web application and test the trained model, follow these steps:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/transformer-translation.git
+   git clone https://github.com/AndriievskyiN/MachineTranslation.git
     ``````
    
    
