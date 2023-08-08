@@ -2,7 +2,8 @@
 
 This project involves training a Transformer model from scratch for a machine translation task, specifically translating English sentences to German. The Transformer architecture has shown remarkable results in natural language processing tasks, and this project showcases its capabilities in the translation domain.
 
-![Website screenshot](https://drive.google.com/file/d/1G8VDcQm1CjdMKkqmx-ZfPYoe1vP4KCtN/view?usp=sharing)
+![Website preview](https://github.com/AndriievskyiN/MachineTranslation/assets/92473539/522fce30-6ae5-460b-9736-a71bf6c7d19e)
+
 
 ## Overview
 
