@@ -1,0 +1,23 @@
+{
+  "name": "machine_translation",
+  "version": "1.0.0",
+  "description": "This project involves training a Transformer model from scratch for a machine translation task, specifically translating English sentences to German. The Transformer architecture has shown remarkable results in natural language processing tasks, and this project showcases its capabilities in the translation domain.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-server": "uvicorn app:app --reload",
+    "start-webapp": "open index.html",
+    "start": "npm run start-server & npm run start-webapp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndriievskyiN/MachineTranslation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndriievskyiN/MachineTranslation/issues"
+  },
+  "homepage": "https://github.com/AndriievskyiN/MachineTranslation#readme"
+}
