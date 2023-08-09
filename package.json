@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cd-dev": "cd dev",
-    "start-server": "uvicorn app:app --reload",
+    "start-server": "uvicorn dev.app:app --reload",
     "start-webapp": "open dev/index.html",
     "start": "npm run start-server & npm run start-webapp"
   },
