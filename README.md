@@ -26,7 +26,7 @@ To run the web application and test the trained model, follow these steps:
     cd MachineTranslation
     ```
 3. Download the machine trasnlation model from Google Drive (The file it too big to push to GitHub) 
-**SAVE IT AS transformer.pt** 
+**SAVE IT AS transformer.pt to the cloned directory** 
     ```bash
     https://drive.google.com/file/d/15BltR8FJFO2jQq8pqm6pG5oEbHlY00p_/view?usp=sharing
 
