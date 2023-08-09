@@ -17,12 +17,12 @@ origins = [
     "http://localhost:5500"   # Add your frontend URL here (if using localhost)
 ]
 
+# Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_origins=["*"],  # Update with the actual list of allowed origins
+    allow_methods=["*"],  # Update with the allowed HTTP methods
+    allow_headers=["*"],  # Update with the allowed headers
 )
 
 # Load your trained model and tokenizer
@@ -47,7 +47,7 @@ model = Transformer(
     device=DEVICE
 )
 
-model.load_state_dict(torch.load("../transformer.pt", map_location=torch.device('cpu')))
+model.load_state_dict(torch.load("transformer.pt", map_location=torch.device('cpu')))
 
 class Item(BaseModel):
     input_text: str
