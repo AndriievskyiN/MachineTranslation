@@ -7,7 +7,7 @@ This project involves training a Transformer model from scratch for a machine tr
 
 ## Overview
 
-In this project, I trained a Transformer model on a relatively small dataset of English-to-German translations. The Transformer architecture, known for its self-attention mechanism, enables capturing complex linguistic patterns, making it an ideal choice for machine translation tasks.
+In this project, I trained a Transformer model on a relatively small dataset of English-to-German translations from scratch. The Transformer architecture, known for its self-attention mechanism, enables capturing complex linguistic patterns, making it an ideal choice for machine translation tasks.
 
 The model was trained using PyTorch and the Hugging Face Transformers library. The training loop, tokenization, and evaluation were implemented from scratch. The trained model is used to power a simple web application that accepts English sentences as input and provides their German translations as output.
 
