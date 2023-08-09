@@ -25,7 +25,9 @@ To run the web application and test the trained model, follow these steps:
     ```bash
     cd MachineTranslation
     ```
-    
+3. Download the machine trasnlation model from Google Drive (The file it too big to push to GitHub)
+```https://drive.google.com/file/d/15BltR8FJFO2jQq8pqm6pG5oEbHlY00p_/view?usp=sharing```
+
 3. Download the required libraries
     ```bash
     pip install -r requirements.txt
@@ -39,10 +41,7 @@ To run the web application and test the trained model, follow these steps:
 5. Run the webapp
     ```bash
     npm start
-    ```   
-
-6. Open the ***index.html*** file to access the web application
-
+    ```  
 
 # Notes
 The training dataset used in this project is relatively small, which might limit the model's performance. Consider training on a larger dataset for improved translation quality.
