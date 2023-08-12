@@ -110,7 +110,6 @@ class DecoderBlock(nn.Module):
 
     def forward(self, x, encoder_output, decoder_mask, padding_mask=None):
         x = self.norm1(x + self.dropout(self.sa(x, x, x, decoder_mask)))
-        self.encoder_decoder_attention(x, encoder_output, encoder_output, padding_mask)
         x = self.norm2(x + self.dropout(self.encoder_decoder_attention(x, encoder_output, encoder_output, padding_mask)))
         x = self.norm3(x + self.dropout(self.ffwd(x)))
         return x
@@ -147,7 +146,7 @@ class Transformer(nn.Module):
         self.decoder = Decoder(trgt_vocab_size, n_embed, max_length, n_heads, n_layers, dropout_p, device)
         self.device = device
 
-    def forward(self, x, y, padding_mask, decoder_mask):
+    def forward(self, x, y, decoder_mask, padding_mask=None):
         encoder_output = self.encoder(x, padding_mask)
         out = self.decoder(y, encoder_output, decoder_mask, padding_mask)
         return out
