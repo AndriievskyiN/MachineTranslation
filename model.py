@@ -92,7 +92,7 @@ class Encoder(nn.Module):
 
         x = embedding
         for block in self.blocks:
-            x = block(embedding, mask)
+            x = block(x, mask)
         return x
     
 class DecoderBlock(nn.Module):
